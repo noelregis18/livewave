@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Center the content horizontally */
+      div {
+        text-align: center;
+      }
+
+      /* Add margin below the video and button */
+
+      #user-video,
+      #start-btn {
+        margin-bottom: 20px;
+      }
+      .app {
+        margin-bottom: 20px;
+      }
+      #start-btn {
+        margin: 2px;
+        padding: 4px;
+        height: 2rem;
+        width: 5rem;
+        background-color: rgb(228, 160, 160);
+        border-radius: 20px;
+        font-family: Helvetica, sans-serif;
+        font-weight: 500;
+      }
+      h1 {
+        color: rgb(20, 18, 18);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      video {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Streamyard Clone</h1>
+      <video id="user-video" autoplay muted></video>
+      <br />
+      <button id="start-btn">Start</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
